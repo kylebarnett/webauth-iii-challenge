@@ -45,7 +45,7 @@ function genToken(user) {
   const payload = {
     userid: user.id,
     username: user.username,
-    departments: user.department
+    departments: ['math', 'physics']
   }
 
   const token = jwt.sign(payload, secrets.jwtSecret);
